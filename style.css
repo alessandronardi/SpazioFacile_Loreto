@@ -1,0 +1,39 @@
+html {
+scroll-behavior: smooth;
+}
+body {
+font-family: 'Inter', sans-serif;
+background-color: #f8fafc; /* Fallback background */
+}
+h1, h2, h3 {
+font-family: 'Playfair Display', serif;
+}
+.gradient-bg {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.glass-effect {
+backdrop-filter: blur(10px);
+background: rgba(255, 255, 255, 0.8);
+border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.hover-lift {
+transition: all 0.3s ease;
+}
+.hover-lift:hover {
+transform: translateY(-8px);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.floating {
+animation: floating 3s ease-in-out infinite;
+}
+@keyframes floating {
+0%, 100% { transform: translateY(0px); }
+50% { transform: translateY(-10px); }
+}
+.pulse-soft {
+animation: pulse-soft 2s infinite;
+}
+@keyframes pulse-soft {
+0%, 100% { opacity: 1; }
+50% { opacity: 0.8; }
+}

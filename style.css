@@ -4,8 +4,9 @@ scroll-behavior: smooth;
 body {
 font-family: 'Inter', sans-serif;
 background-color: #f8fafc; /* Fallback background */
+overflow-x: hidden
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
 font-family: 'Playfair Display', serif;
 }
 .gradient-bg {
@@ -25,6 +26,11 @@ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 .floating {
 animation: floating 3s ease-in-out infinite;
+}
+.icon {
+width: 24px;
+height: 24px;
+stroke-width: 2.5;
 }
 @keyframes floating {
 0%, 100% { transform: translateY(0px); }

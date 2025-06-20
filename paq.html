@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAQ - Probabili Domande - SpazioFacile Loreto</title>
+    <meta name="description" content="Risposte alle domande più frequenti su SpazioFacile Loreto - servizio di deposito scatole a domicilio">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="glass-effect sticky top-0 z-50 py-4 shadow-lg bg-white/90 backdrop-blur-sm">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-2 text-gray-700 font-medium">
+                <a href="index.html" class="hover:text-purple-600 transition duration-300">Home</a>
+                <a href="contatti.html" class="hover:text-purple-600 transition duration-300">Contatti</a>
+                <a href="regolamento.html" class="hover:text-purple-600 transition duration-300">Regolamento</a>
+                <a href="paq.html" class="text-blue-600 transition duration-300">PAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto my-8 md:my-16 bg-white shadow-xl rounded-lg overflow-hidden">
+        <header class="bg-gradient-to-br from-purple-600 to-blue-600 text-center text-white rounded-3xl p-8 shadow-xl hover-lift transform md:scale-105 relative flex flex-col">
+            <h1 class="text-4xl md:text-5xl font-bold">
+                <a href="index.html">Spazio<span class="text-yellow-300">Facile</span> Loreto</a>
+            </h1>
+            <h2 class="text-2xl mt-2">PAQ - Probabili Domande</h2>
+            <p class="text-lg mt-4 opacity-90">Le risposte che stavi cercando, prima ancora di fare le domande</p>
+        </header>
+
+        <main class="p-6 md:p-10">
+            
+            <div class="text-center mb-12">
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Abbiamo raccolto le domande che probabilmente ti stai facendo sul nostro servizio. 
+                    Se non trovi quello che cerchi, <a href="contatti.html" class="text-purple-600 hover:text-purple-800 font-semibold">contattaci direttamente</a>!
+                </p>
+            </div>
+
+            <!-- Sezione Generale -->
+            <section class="mb-12">
+                <h3 class="text-3xl font-bold text-purple-700 border-b-2 border-purple-200 pb-2 mb-8 flex items-center">
+                    <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    Domande Generali
+                </h3>
+
+                <div class="space-y-4">
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg" onclick="toggleFaq(this)">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-lg font-semibold text-gray-800">Cos'è esattamente SpazioFacile Loreto?</h4>
+                                <svg class="w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                SpazioFacile Loreto è un servizio di deposito personalizzato che ti aiuta a liberare spazio in casa senza dover buttare via le tue cose. 
+                                Portiamo le scatole a casa tua, tu le riempi con calma, noi le ritiriamo e le custodiamo in un deposito sicuro. 
+                                Quando ti serve qualcosa, basta un messaggio e te la riportiamo. Semplice, sicuro, conveniente.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg" onclick="toggleFaq(this)">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-lg font-semibold text-gray-800">In che zone operate?</h4>
+                                <svg class="w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                Attualmente serviamo Loreto e i comuni limitrofi (Recanati, Porto Recanati, Castelfidardo). 
+                                Se sei fuori zona, contattaci comunque: potremmo fare un'eccezione o includerti nei nostri piani di espansione!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg" onclick="toggleFaq(this)">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-lg font-semibold text-gray-800">Quanto costa il servizio?</h4>
+                                <svg class="w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6">
+                            <div class="text-gray-600 leading-relaxed">
+                                <p class="mb-3">I nostri prezzi sono estremamente competitivi:</p>
+                                <ul class="list-disc list-inside space-y-1 mb-3">
+                                    <li><strong>Compact</strong> (30x30x25 cm): €5/mese</li>
+                                    <li><strong>Standard</strong> (50x35x35 cm): €8/mese</li>
+                                    <li><strong>Maxi</strong> (60x40x35 cm): €10/mese</li>
+                                </ul>
+                                <p>Il trasporto costa €15 per viaggio (sia per il ritiro che per la consegna). Le scatole e il nastro di sicurezza sono gratuiti!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sezione Processo -->
+            <section class="mb-12">
+                <h3 class="text-3xl font-bold text-blue-700 border-b-2 border-blue-200 pb-2 mb-8 flex items-center">
+                    <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                    </svg>
+                    Come funziona
+                </h3>
+
+                <div class="space-y-4">
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg" onclick="toggleFaq(this)">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-lg font-semibold text-gray-800">Quanto tempo ho per riempire le scatole?</h4>
+                                <svg class="w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                Tutto il tempo che vuoi! Non c'è fretta. Puoi tenere le scatole a casa anche per settimane. 
+                                Quando sono pronte, ci accordiamo per il ritiro in base ai tuoi tempi e ai nostri. 
+                                L'importante è che ci avvisi quando sono pronte per essere ritirate.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg" onclick="toggleFaq(this)">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-lg font-semibold text-gray-800">Devo essere presente durante il ritiro e la consegna?</h4>
+                                <svg class="w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                Sì, è necessario che tu o una persona di fiducia siate presenti durante il ritiro e la consegna delle scatole. 
+                                Questo garantisce la sicurezza e permette di verificare insieme lo stato delle scatole. 
+                                Ci accordiamo sempre in anticipo su orari comodi per entrambi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg" onclick="toggleFaq(this)">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-lg font-semibold text-gray-800">Quanto tempo ci vuole per avere indietro le mie cose?</h4>
+                                <svg class="w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                Normalmente organizziamo la consegna entro 24-48 ore dalla tua richiesta, compatibilmente con i nostri giri di consegna. 
+                                Per urgenze particolari, possiamo valutare consegne in giornata (potrebbero applicarsi costi aggiuntivi). 
+                                Ti teniamo sempre aggiornato sui tempi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sezione Sicurezza -->
+            <section class="mb-12">
+                <h3 class="text-3xl font-bold text-green-700 border-b-2 border-green-200 pb-2 mb-8 flex items-center">
+                    <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                    Sicurezza e Assicurazione
+                </h3>
+
+                <div class="space-y-4">
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg" onclick="toggleFaq(this)">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-lg font-semibold text-gray-800">Dove vengono custodite le mie scatole?</h4>
+                                <svg class="w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                Le tue scatole sono custodite in un deposito privato, sicuro e a clima controllato a Loreto. 
+                                L'ambiente è asciutto, protetto da umidità e sbalzi di temperatura. 
+                                Il deposito è dotato di sistemi di sicurezza e accesso riservato. 
+                                Solo noi abbiamo accesso alle tue scatole.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg" onclick="toggleFaq(this)">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-lg font-semibold text-gray-800">Le mie cose sono assicurate?</h4>
+                                <svg class="w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                Sì! Ogni scatola è coperta da un'assicurazione base inclusa nel prezzo per danni da incendio, furto o allagamento. 
+                                Stiamo valutando anche opzioni di assicurazione aggiuntiva per oggetti di valore particolare. 
+                                I dettagli completi sono nel nostro <a href="regolamento.html" class="text-purple-600 hover:text-purple-800">regolamento</a>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg" onclick="toggleFaq(this)">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-lg font-semibold text-gray-800">Cosa succede se dimentico cosa ho messo in una scatola?</h4>
+                                <svg class="w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                Per questo ti chiediamo di mettere sempre una lista del contenuto dentro ogni scatola! 
+                                Inoltre, ti consigliamo di tenere una copia della lista o di fare una foto prima di sigillare.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg" onclick="toggleFaq(this)">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-lg font-semibold text-gray-800">Come gestite i miei dati personali?</h4>
+                                <svg class="w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                Bella domanda! Ti rimando alla pagina del <a href="privacy.policy.html" class="text-purple-400 hover:text-purple-300">regolamento sul trattamento dei tuoi dati personali</a>.
+                            </p>
+                        </div>
+                    </div>                    
+                </div>
+            </section>
+
+            <!-- Sezione Pagamenti -->
+            <section class="mb-12">
+                <h3 class="text-3xl font-bold text-orange-700 border-b-2 border-orange-200 pb-2 mb-8 flex items-center">
+                    <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                    Pagamenti e Contratti
+                </h3>
+
+                <div class="space-y-4">
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg" onclick="toggleFaq(this)">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-lg font-semibold text-gray-800">Come funziona il pagamento?</h4>
+                                <svg class="w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                Il pagamento è mensile e anticipato. Puoi pagare con bonifico bancario, contanti o carta. 
+                                Ti invieremo una ricevuta per ogni pagamento. Stiamo valutando l'introduzione di pagamenti automatici 
+                                per maggiore comodità.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg" onclick="toggleFaq(this)">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-lg font-semibold text-gray-800">Posso disdire quando voglio?</h4>
+                                <svg class="w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                Assolutamente sì! Non ci sono vincoli o penali. Puoi disdire il servizio in qualsiasi momento 
+                                con un preavviso di 30 giorni. Ti riporteremo tutte le tue scatole senza costi aggiuntivi 
+                                (escluso il trasporto standard). La flessibilità è uno dei nostri punti di forza!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg" onclick="toggleFaq(this)">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-lg font-semibold text-gray-800">Ci sono sconti per contratti lunghi?</h4>
+                                <svg class="w-5 h-5 text-gray-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                Sì! Offriamo sconti interessanti per chi si impegna per periodi più lunghi: 
+                                10% di sconto per contratti di 6 mesi, 15% per 12 mesi.  
+                                Contattaci per calcolare insieme la soluzione più conveniente!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="bg-gradient-to-r from-purple-50 to-blue-50 -mx-6 md:-mx-10 p-8 md:p-12 rounded-lg text-center">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Non hai trovato la risposta che cercavi?</h3>
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Siamo qui per te! Contattaci direttamente e ti risponderemo a qualsiasi dubbio.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contatti.html" class="bg-purple-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-purple-700 transition duration-300 shadow-lg hover:shadow-xl">
+                        Contattaci Ora
+                    </a>
+                    <a href="tel:3895259773" class="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-purple-600 hover:text-white transition duration-300">
+                        Chiamaci: 389 525 9773
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="p-6 bg-slate-800 text-center text-slate-400">
+            <p class="mb-2">Hai altre domande? <a href="contatti.html" class="text-purple-400 hover:text-purple-300">Contattaci</a> e saremo felici di aiutarti!</p>
+            <p>&copy; 2025 SpazioFacile Loreto. Tutti i diritti riservati.</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            
+            // Controlla se l'elemento su cui abbiamo cliccato è GIA' aperto
+            const isAlreadyOpen = answer.classList.contains('open');
+            
+            // Per prima cosa, chiudi TUTTI gli elementi
+            document.querySelectorAll('.faq-answer.open').forEach(item => {
+                item.classList.remove('open');
+                item.previousElementSibling.querySelector('svg').classList.remove('rotate-180');
+            });
+            
+            // Se l'elemento non era già aperto, aprilo
+            if (!isAlreadyOpen) {
+                answer.classList.add('open');
+                icon.classList.add('rotate-180');
+            }
+        }
+    </script>
+
+    </div> <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-50 slide-up">
+        <div class="glass-effect shadow-2xl border-t border-gray-200">
+            <div class="container mx-auto px-6 py-6">
+                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+                    <div class="flex-1">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                                    <circle cx="8" cy="10" r="1"/><circle cx="12" cy="8" r="1"/><circle cx="16" cy="12" r="1"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-gray-800 mb-2">Rispettiamo la tua privacy</h3>
+                                <p class="text-gray-700 leading-relaxed max-w-2xl">
+                                    Come il tuo vicino di fiducia, trattiamo i tuoi dati con la stessa cura delle tue cose. 
+                                    Usiamo solo i cookie essenziali per far funzionare il sito e migliorare la tua esperienza.
+                                    Consulta la nostra pagina <a href="privacy.policy.html" class="text-purple-400 hover:text-purple-300">Privacy Policy</a> per saperne di più.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+                        <button id="cookieSettings" class="px-6 py-3 border-2 border-purple-600 text-purple-600 rounded-full font-semibold hover:bg-purple-50 transition duration-300 whitespace-nowrap">
+                            Gestisci Preferenze
+                        </button>
+                        <button id="acceptCookies" class="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold hover:from-purple-700 hover:to-blue-700 transition duration-300 shadow-lg hover:shadow-xl whitespace-nowrap">
+                            Accetta Tutto
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cookieModal" class="fixed inset-0 z-60 fade-out hide">
+        <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+        <div class="relative min-h-screen flex items-center justify-center p-4">
+            <div class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-3xl font-bold text-gray-800">Impostazioni Cookie</h2>
+                        <button id="closeModal" class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition duration-300">
+                            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </button>
+                    </div>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Scegli quali cookie vuoi accettare. Come sempre, facciamo le cose semplici e trasparenti.</p>
+                    
+                    <div class="mb-6 p-6 bg-gray-50 rounded-2xl">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-bold text-lg text-gray-800">Cookie Necessari</h3>
+                            <div class="w-12 h-6 bg-green-500 rounded-full relative"><div class="w-5 h-5 bg-white rounded-full absolute top-0.5 right-0.5 shadow-sm"></div></div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Essenziali per il funzionamento del sito. Permettono la navigazione e l'uso delle funzioni base. Sempre attivi.</p>
+                    </div>
+                    
+                    <div class="mb-6 p-6 bg-gray-50 rounded-2xl">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-bold text-lg text-gray-800">Cookie Analitici</h3>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="analyticsCookies" class="sr-only peer">
+                                <div class="w-12 h-6 bg-gray-300 peer-focus:outline-none rounded-full peer peer-checked:bg-purple-600 peer-checked:after:translate-x-6 after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+                            </label>
+                        </div>
+                        <p class="text-gray-600 text-sm">Ci aiutano a capire come migliorare il sito analizzando come lo usi. Dati sempre anonimi e aggregati.</p>
+                    </div>
+                    
+                    <div class="mb-8 p-6 bg-gray-50 rounded-2xl">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-bold text-lg text-gray-800">Cookie Marketing</h3>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="marketingCookies" class="sr-only peer">
+                                <div class="w-12 h-6 bg-gray-300 peer-focus:outline-none rounded-full peer peer-checked:bg-purple-600 peer-checked:after:translate-x-6 after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+                            </label>
+                        </div>
+                        <p class="text-gray-600 text-sm">Per mostrarti contenuti più interessanti e pertinenti. Puoi sempre dire di no, nessun problema!</p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <button id="rejectAll" class="flex-1 px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:bg-gray-50 transition duration-300">Rifiuta Tutto</button>
+                        <button id="savePreferences" class="flex-1 px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold hover:from-purple-700 hover:to-blue-700 transition duration-300 shadow-lg">Salva Preferenze</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class CookieManager {
+            constructor() {
+                this.banner = document.getElementById('cookieBanner');
+                this.modal = document.getElementById('cookieModal');
+                if (!this.banner || !this.modal) {
+                    console.error('Elementi del banner o del modal non trovati.');
+                    return;
+                }
+                this.init();
+            }
+            
+            init() {
+                if (!this.getCookie('cookieConsent')) {
+                    setTimeout(() => this.showBanner(), 1000);
+                } else {
+                    this.loadSelectedCookies();
+                }
+                this.bindEvents();
+            }
+            
+            bindEvents() {
+                document.getElementById('acceptCookies').addEventListener('click', () => this.acceptAllCookies());
+                document.getElementById('cookieSettings').addEventListener('click', () => this.showModal());
+                document.getElementById('closeModal').addEventListener('click', () => this.hideModal());
+                document.getElementById('rejectAll').addEventListener('click', () => this.rejectAllCookies());
+                document.getElementById('savePreferences').addEventListener('click', () => this.savePreferences());
+                this.modal.addEventListener('click', (e) => {
+                    if (e.target === this.modal) this.hideModal();
+                });
+            }
+            
+            showBanner() {
+                this.banner.classList.remove('hide');
+                // La classe 'show' ora gestisce tutto, inclusa la visibilità
+                this.banner.classList.add('show');
+            }
+            
+            hideBanner() {
+                this.banner.classList.remove('show');
+                // Nascondiamo l'elemento dopo la transizione
+                setTimeout(() => this.banner.classList.add('hide'), 500);
+            }
+            
+            showModal() {
+                this.modal.classList.remove('hide');
+                // Aggiungiamo 'show' per avviare la transizione di opacità
+                this.modal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            hideModal() {
+                this.modal.classList.remove('show');
+                // Aspettiamo la fine della transizione prima di aggiungere 'hide'
+                setTimeout(() => this.modal.classList.add('hide'), 300);
+                document.body.style.overflow = 'auto';
+            }
+            
+            acceptAllCookies() {
+                this.setCookie('cookieConsent', 'all', 365);
+                this.setCookie('analyticsCookies', 'true', 365);
+                this.setCookie('marketingCookies', 'true', 365);
+                this.hideBanner();
+                this.loadSelectedCookies();
+            }
+            
+            rejectAllCookies() {
+                this.setCookie('cookieConsent', 'necessary', 365);
+                this.setCookie('analyticsCookies', 'false', 365);
+                this.setCookie('marketingCookies', 'false', 365);
+                this.hideModal();
+                this.hideBanner();
+            }
+            
+            savePreferences() {
+                const analytics = document.getElementById('analyticsCookies').checked;
+                const marketing = document.getElementById('marketingCookies').checked;
+                this.setCookie('cookieConsent', 'custom', 365);
+                this.setCookie('analyticsCookies', analytics.toString(), 365);
+                this.setCookie('marketingCookies', marketing.toString(), 365);
+                this.hideModal();
+                this.hideBanner();
+                this.loadSelectedCookies();
+            }
+            
+            loadSelectedCookies() {
+                if (this.getCookie('analyticsCookies') === 'true') this.loadAnalytics();
+                if (this.getCookie('marketingCookies') === 'true') this.loadMarketing();
+            }
+            
+            loadAnalytics() { console.log('Caricamento script di Google Analytics...'); }
+            loadMarketing() { console.log('Caricamento script di Marketing...'); }
+            
+            setCookie(name, value, days) {
+                let expires = "";
+                if (days) {
+                    const date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "")  + expires + "; path=/;SameSite=Strict";
+            }
+            
+            getCookie(name) {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for(let i=0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                }
+                return null;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new CookieManager();
+        });
+    </script>
+</body>
+</html>
+

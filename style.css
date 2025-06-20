@@ -43,3 +43,148 @@ animation: pulse-soft 2s infinite;
 0%, 100% { opacity: 1; }
 50% { opacity: 0.8; }
 }
+.faq-item {
+transition: all 0.3s ease;
+}
+.faq-item:hover {
+transform: translateY(-2px);
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.faq-answer {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease;
+}
+.faq-answer.open {
+max-height: 500px;
+}
+.rotate-180 {
+transform: rotate(180deg);
+}
+.fade-out {
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+/* Rende l'elemento non cliccabile quando è trasparente */
+pointer-events: none; 
+}
+.fade-out.hide {
+opacity: 0;
+pointer-events: none;
+}
+.fade-out.show {
+opacity: 1;
+pointer-events: auto; /* Rende l'elemento di nuovo cliccabile */
+}
+
+/* Stili Forzati per Cookie Banner e Modal */
+
+#cookieBanner, #cookieModal {
+/* Un z-index altissimo per garantire che sia sopra a tutto */
+z-index: 9999 !important; 
+}
+
+/* Stili per nascondere/mostrare gli elementi */
+.hide {
+display: none !important;
+}
+
+.show {
+display: flex !important; /* 'flex' per il modal, si adatterà anche al banner */
+visibility: visible !important;
+opacity: 1 !important;
+}
+
+/* Animazione per il banner */
+.slide-up {
+transform: translateY(100%);
+opacity: 0;
+transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+.slide-up.show {
+transform: translateY(0);
+opacity: 1;
+}
+
+/* Animazione per il modal */
+#cookieModal {
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+#cookieModal.show {
+opacity: 1;
+visibility: visible;
+}
+
+/* Contatti */
+
+.contact-card {
+transition: all 0.3s ease;
+}
+.contact-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+.form-group {
+position: relative;
+}
+.form-input {
+transition: all 0.3s ease;
+}
+.form-input:focus {
+transform: translateY(-2px);
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.success-message {
+display: none;
+animation: slideIn 0.5s ease;
+}
+@keyframes slideIn {
+from { opacity: 0; transform: translateY(-20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+.error-message {
+font-size: 0.875rem;
+margin-top: 0.25rem;
+}
+
+/* Stile per privacy.policy */
+
+        .privacy-section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: 1rem;
+            border-left: 4px solid #8b5cf6;
+        }
+        .privacy-section h3 {
+            color: #6b46c1;
+            margin-bottom: 1rem;
+        }
+        .privacy-section h4 {
+            color: #4c1d95;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .privacy-section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .privacy-section li {
+            margin-bottom: 0.5rem;
+            list-style-type: disc;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%);
+            border: 1px solid #a78bfa;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .contact-info {
+            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+            border: 1px solid #6ee7b7;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }

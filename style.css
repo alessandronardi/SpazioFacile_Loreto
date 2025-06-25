@@ -14,7 +14,7 @@ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 .glass-effect {
 backdrop-filter: blur(10px);
-background: rgba(255, 255, 255, 0.9);
+background: rgba(255, 255, 255, 0.8);
 border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .hover-lift {
@@ -43,19 +43,38 @@ animation: pulse-soft 2s infinite;
 0%, 100% { opacity: 1; }
 50% { opacity: 0.8; }
 }
+.faq-item {
+transition: all 0.3s ease;
+}
+.faq-item:hover {
+transform: translateY(-2px);
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
 .faq-answer {
 max-height: 0;
 overflow: hidden;
-transition: max-height 0.5s ease-in-out, padding-top 0.5s ease, padding-bottom 0.5s ease;
-padding-top: 0;
-padding-bottom: 0;
+transition: max-height 0.3s ease;
 }
 .faq-answer.open {
-max-height: 500px; /* Altezza sufficiente per contenere la risposta */
-padding-top: 0.5rem;
-padding-bottom: 1.5rem;
+max-height: 500px;
 }
-.rotate-180 { transform: rotate(180deg); }
+.rotate-180 {
+transform: rotate(180deg);
+}
+.fade-out {
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+/* Rende l'elemento non cliccabile quando è trasparente */
+pointer-events: none; 
+}
+.fade-out.hide {
+opacity: 0;
+pointer-events: none;
+}
+.fade-out.show {
+opacity: 1;
+pointer-events: auto; /* Rende l'elemento di nuovo cliccabile */
+}
 
 /* Stili Forzati per Cookie Banner e Modal */
 
